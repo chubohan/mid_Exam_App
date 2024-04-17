@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/txtFood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="92dp"
+        android:text="主食:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDrink2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="飲料:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtFood2"
+        app:layout_constraintTop_toBottomOf="@+id/txtFood2" />
+
+    <TextView
+        android:id="@+id/txtDessert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="144dp"
+        android:text="点心:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDrink2"
+        app:layout_constraintTop_toBottomOf="@+id/txtDrink2" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="44dp"
+        android:text="確認"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/txtFood2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdbNuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="花栗鼠佐堅果醬$941210" />
+
+        <RadioButton
+            android:id="@+id/rdbTrue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="true飯$2500" />
+
+        <RadioButton
+            android:id="@+id/rdbChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="雞腿便當/\$120" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rdbOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="澄汁汗$87" />
+
+        <RadioButton
+            android:id="@+id/rdbDinter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="現榨柳丁特調$78" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/ckbRat"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="鼠條$+15"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <CheckBox
+        android:id="@+id/chkmarry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="嫁虔$+520"
+        app:layout_constraintStart_toStartOf="@+id/ckbRat"
+        app:layout_constraintTop_toBottomOf="@+id/ckbRat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
